@@ -1,2 +1,5 @@
 # diving deep into code
 # diving deep into technical concepts
+
+What is CDN in React?
+React is integrated in the projects using package managers like npm or yarn. However, there are some cases where using Content Delivery Network (CDN) links can be a advantage, especially for quick prototypes, or when integrating React into existing projects.
