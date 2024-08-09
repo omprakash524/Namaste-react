@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        const heading1 = React.createElement("h1", {}, "This is 1st element of react");
+        const heading2 = React.createElement("h2", {}, "This is 2nd element of react");
+        const heading3 = React.createElement("h3", {}, "This is 3rd element of react");
+        const heading4 = React.createElement('h4', {}, "This is 4th element of react");
+        const heading5 = React.createElement("h5", {}, "This is 5th element of react");
+
+        // Create a parent element to hold all headings
+        const container = React.createElement("div", {}, heading1,heading2,heading3,heading4, heading5);
+
+
+        // Render the parent element containing all headings
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(container);
+
+    </script>
+
+</body>
+</html>

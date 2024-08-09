@@ -22,3 +22,8 @@ We as a developer have to use this super power to build the large scale applicat
 We are going to use this super power into our project, we are going to do that a better a good react developer is the one who knows how to use the super power (react cdn)
 
 
+    // what is the most costly expensive operation in web browser?
+    //  Layout and Reflow: when you modify the DOM, change CSS styles, or resize the window
+    // DOM Manipulation: when inserting or removing elements
+    // CSS Selectors:CSS Selectors: Using complex CSS selectors, such as those with multiple classes, IDs, and pseudo-classesUsing complex CSS selectors, such as those with multiple classes, IDs, and pseudo-classes
+    // One word answer : When DOM nodes manipulate when you click the button and something shows and hide the DOM Tree getting changed putting some nodes in the DOM and removing inside the DOM is the most expensive operation in web browser
