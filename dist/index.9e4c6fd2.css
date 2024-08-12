@@ -1,0 +1,24 @@
+#heading {
+  color: green;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+}
+
+.abc {
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.grandparentc {
+  background-color: orange;
+  font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+}
+
+#h2sibling {
+  font-style: italic;
+}
+
+#childid2 {
+  background-color: #adff2f;
+  font-family: Optimistic Text, -apple-system, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */

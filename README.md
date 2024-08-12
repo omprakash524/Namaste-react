@@ -187,3 +187,11 @@ Transitive dependencies
 # Basically having of package.json and package-lock.json we can recreate the node_modules
 
 # What ever we can regenerate dont put on git
+
+
+
+
+# To build our app using parcel = npx parcel index.html (source file of project)
+# To run our app using parcel = npx parcel index.html (source file of project)
+
+![alt text](image-3.png)
