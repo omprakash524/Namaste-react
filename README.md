@@ -8,6 +8,18 @@ React is integrated in the projects using package managers like npm or yarn. How
 there are some cases where using Content Delivery Network (CDN) links can be a advantage, 
 especially for quick prototypes, or when integrating React into existing projects.
 
+# There were two way to get react in our project
+# 1. By using cdn link and 
+# 2. via npm
+
+
+# At the end of the day react is a javascript package and it is hosted over npm also
+
+
+
+# But CDN is not a prefer way to bring react and react DOM in project why because fetching from cdn is costly operation it will network call to unpkg.com and it will get react from there
+# But if we have already React in node_modules it would it be easy, we dont have to another network call to React. We will have already in our node_modules
+
 
 inserting react in our projects
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
@@ -195,3 +207,33 @@ Transitive dependencies
 # To run our app using parcel = npx parcel index.html (source file of project)
 
 ![alt text](image-3.png)
+
+
+
+
+# npx just like we have npm which will install the package we have npx to execute package we write npx package name [npx parcel index.html]
+
+
+
+
+# There were two way to get react in our project
+# 1. By using cdn link and 
+# 2. via npm
+
+
+# At the end of the day react is a javascript package and it is hosted over npm also
+
+
+
+# But CDN is not a prefer way to bring react and react DOM in project why because fetching from cdn is costly operation it will network call to unpkg.com and it will get react from there
+# But if we have already React in node_modules it would it be easy, we dont have to another network call to React. We will have already in our node_modules
+
+
+
+# Now we will install React as a pckage in our code = npm install react [remember we are not installing here -D(dev dependency but normal dependency we are installing ) and we are installing so we are using npm if it would be for executing we will use npx] 
+
+# Similarly we will also install react DOM = npm install react-dom
+
+Now we no longer need CDN we can remove react cdn link and reactDOM cdn link from index.html. Now if we start our app (npx parcel index.html) we can see our app running but we can see React is not defined because earlier we are getting React from the CDN but now we will get it from node_modules because we have installed react and reactDOM we just need to import React from node_modules.
+
+We will get the error Browser scripts cannot have imports or exports. because we are injecting  [<script src="./App.js"> </script>] so at the end it will think it is just a simple javascript but not react.
