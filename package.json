@@ -1,0 +1,31 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Om Prakash igniting the app",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/omprakash524/Namaste-react)"
+  },
+  "keywords": [
+    "react",
+    "namaste",
+    "react",
+    "om",
+    "prakash",
+    "iginite",
+    "app",
+    "litting",
+    "fire",
+    "to",
+    "tail"
+  ],
+  "author": "Om Prakash",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
