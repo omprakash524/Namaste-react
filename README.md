@@ -1,5 +1,7 @@
+# Namaste React 🚀
 # diving deep into code
 # diving deep into technical concepts
+
 
 What is CDN in React?
 React is integrated in the projects using package managers like npm or yarn. However, 

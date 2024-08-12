@@ -54,6 +54,7 @@ root4.render(parent);
  *              </div>
  *      </div>
  * </div>
+ * ReactElement(Object) => HTML(Browser Understands)
  */
 
 const parent2 = React.createElement("div", {className: "grandparentc"},
@@ -72,3 +73,4 @@ const parent2 = React.createElement("div", {className: "grandparentc"},
 );
 
 root4.render(parent2);
+
