@@ -3,10 +3,10 @@
 # diving deep into technical concepts
 
 
-# What is CDN in React?
+## What is CDN in React?
 - React is integrated in the projects using package managers like npm or yarn. However, there are some cases where using Content Delivery Network (CDN) links can be a advantage, especially for quick prototypes, or when integrating React into existing projects.
 
-# There were two way to get react in our project
+## There were two way to get react in our project
 - 1. By using cdn link and 
 - 2. via npm
 
@@ -18,23 +18,25 @@
 - But CDN is not a prefer way to bring react and react DOM in project why because fetching from cdn is costly operation it will network call to unpkg.com and it will get react from there
 - But if we have already React in node_modules it would it be easy, we dont have to another network call to React. We will have already in our node_modules
 
-```
 inserting react in our projects
+
+```
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 ```
-# Now we have super power of react inside it
+- This is how we can include react in our project using CDN link
+## Now we have super power of react inside it
 
-# To become a great software developer - be curious about every small damn things.
+## To become a great software developer - be curious about every small damn things.
 - what is cdn , why are we using cdn , is there a different way to do it (these type of questions should arise to be a great software developer)
 
 
-# We as a developer have to use this super power to build the large scale applications.
+## We as a developer have to use this super power to build the large scale applications.
 - We have to use this super power to build the scalable, maintainable, and efficient applications.
 - We are going to use this super power into our project, we are going to do that a better a good react developer is the one who knows how to use the super power (react cdn)
 
 
-# what is the most costly expensive operation in web browser? 
+## what is the most costly expensive operation in web browser? 
 * Layout and Reflow: when you modify the DOM, change CSS styles, or resize the window
 * DOM Manipulation: when inserting or removing elements
 * CSS Selectors:CSS Selectors: Using complex CSS selectors, such as those with multiple classes, IDs, and pseudo-classesUsing complex CSS selectors, such as those with multiple classes, IDs, and pseudo-classes
@@ -55,7 +57,9 @@ const parent2 = React.createElement("div", {className: "grandparentc"},
         ]),
     ])
 );
-``` === Only this much is react to avoid messy code we use JSX
+```
+
+* Only this much is react to avoid messy code we use JSX
 - JSX makes life easy when we have to create tags
 
 * ReactElement(Object) => HTML(Browser Understands)
@@ -63,7 +67,7 @@ const parent2 = React.createElement("div", {className: "grandparentc"},
 ===========================================================
 - What ever we written in index.html it will start executing from top to bottom it will execute react then react DOM and at the end it will see App.js and it went to that file and root.render() and it will see what is root it is taking the div with id root and it will render the App.js inside that div and what ever written inside the div it will replace not append (<div id="root">Om is here </div>) om is here will be replaced.
 
-------
+---
  ======= Episode 2 - Igniting our App ==========
  
 - [Github](https://github.com/omprakash524/Namaste-react)
@@ -79,7 +83,7 @@ package.json is a crucial configuration file for npm
 
 - Bundlers basically bundles the app it packages the app properly so that it can shipped to production.
 
-# Here is a list of popular JavaScript module bundlers mentioned across different sources:
+## Here is a list of popular JavaScript module bundlers mentioned across different sources:
 
 - Webpack: One of the most popular and highly configurable bundlers.
 - Parcel: Known for its zero-configuration approach and speed.
@@ -90,12 +94,12 @@ package.json is a crucial configuration file for npm
 These bundlers help in optimizing and packaging your code for production.
 
 
-# There are two types of dependencies or packages we can install
+## There are two types of dependencies or packages we can install
 - 1. dev dependencies - it is generally required for development phase
 - 2. normal dependencies - used in production also
 
 
-# Development dependencies in a Node.js project are packages required only during the development phase but not needed in the production environment. Here are some common examples:
+## Development dependencies in a Node.js project are packages required only during the development phase but not needed in the production environment. Here are some common examples:
 
 - Webpack: A module bundler for JavaScript applications.
 - Babel: A JavaScript compiler that allows you to use next-generation JavaScript today.
@@ -110,23 +114,23 @@ These bundlers help in optimizing and packaging your code for production.
 These packages are typically listed under the devDependencies section in your package.json file 
 
 
-# ![alt text](image.png)
+## ![alt text](image.png)
 
 In Node.js and npm, there are several types of dependencies you can install, typically classified into the following categories:
 
-# Production Dependencies: 
+## Production Dependencies: 
 - Required for the application to run in production. They are specified under the dependencies section in package.json.
 
-# Development Dependencies: 
+## Development Dependencies: 
 - Needed only during development, such as testing libraries or build tools. These are specified under the devDependencies section.
 
-# Peer Dependencies: 
+## Peer Dependencies: 
 - Specify which versions of a dependency are compatible with your package, allowing you to avoid version conflicts.
 
-# Optional Dependencies: 
+## Optional Dependencies: 
 - These are not mandatory for your package to work, and you can specify fallback logic if they are not installed.
 
-# Bundled Dependencies: 
+## Bundled Dependencies: 
 - Include dependencies within your package, ensuring that they are installed when your package is installed [1][3].
 
 In summary, there are five main types of dependencies you can install in a Node.js project.
@@ -139,7 +143,7 @@ In summary, there are five main types of dependencies you can install in a Node.
 - "parcel": "^2.12.0"
 = we can see caret(^) before version but we can also written tilde(~)
 
-# Caret (^)
+## Caret (^)
 - The caret allows you to update a package to any version that is compatible with the specified version, while ensuring that no breaking changes are introduced.
 - If you specify "^2.12.0":
 It means you can update to any version from 2.12.0 up to, but not including, 3.0.0. This includes:
@@ -147,18 +151,18 @@ Patch versions (e.g., 2.12.1, 2.12.2, etc.)
 Minor versions (e.g., 2.13.0, 2.14.0, etc.)
 This is useful because it allows you to receive updates for bug fixes and new features that do not break existing functionality.
 
-# Tilde (~)
+## Tilde (~)
 - The tilde allows for more restricted updates. It limits updates to the patch version only.
 - If you specify "~2.12.0":
 It means you can update to any version from 2.12.0 up to, but not including, 2.13.0. This includes:
 Only patch versions (e.g., 2.12.1, 2.12.2, etc.)
 This is useful when you want to ensure that no new features (which could potentially introduce breaking changes) are added, focusing solely on small fixes.
-# Summary
+## Summary
 Use ^ when you are okay with receiving minor updates and bug fixes.
 Use ~ when you want to strictly limit updates to bug fixes only, avoiding any new features.
 Using these symbols helps maintain compatibility and stability in your project while still allowing for necessary updates.
 
-# ![alt text](image-2.png)
+## ![alt text](image-2.png)
 
 
 
@@ -170,14 +174,14 @@ Using these symbols helps maintain compatibility and stability in your project w
 In package-lock.json file we also see integrity along with package version, that integrity hash the code and make sure what ever we are running in local machine should same run on production.
 
 
-# node modules
+## node modules
 
 - node_modules contain all the code that we fetched from npm
 - it is a folder where all the dependencies are stored it's like database of that dependencies of our project need.
 - it is not a good practice to push node_modules in git because it is a big folder.
 - it fetches all the codes of all the dependencies of our project required all the packages.
 
-# Transitive dependencies
+## Transitive dependencies
 - Our project need parcel and parcel as a project has it own dependencies and those dependencies can have it own dependencies and this dependencies can have own dependencies this is known as transitive dependencies
 
 
@@ -186,7 +190,7 @@ In package-lock.json file we also see integrity along with package version, that
 
 - In our project how many package.json and package-lock.json do we have if we think 2 then we are wrong, because once we open node_modules and see every dependencies contain its own package.json and package-lock.json
 
-# node_modules is collection of dependencies
+## node_modules is collection of dependencies
 
 
 
@@ -207,7 +211,7 @@ In package-lock.json file we also see integrity along with package version, that
 - To build our app using parcel = npx parcel index.html (source file of project)
 - To run our app using parcel = npx parcel index.html (source file of project)
 
-# ![alt text](image-3.png)
+## ![alt text](image-3.png)
 
 
 
@@ -217,7 +221,7 @@ In package-lock.json file we also see integrity along with package version, that
 
 
 
-# There were two way to get react in our project
+## There were two way to get react in our project
 - 1. By using cdn link and 
 - 2. via npm
 
@@ -242,7 +246,7 @@ We will get the error Browser scripts cannot have imports or exports. because we
 
 
 
-# Parcel
+## Parcel
 - Dev Build
 - Local Server
 - HMR = Hot Module Replacement
@@ -263,12 +267,12 @@ We will get the error Browser scripts cannot have imports or exports. because we
 
 
 
-# ![alt text](image-4.png)
+## ![alt text](image-4.png)
 
 
-# React uses a lot of other libraries lot of packages to make a production ready large application
+## React uses a lot of other libraries lot of packages to make a production ready large application
 
-# npx parcel build index.html
+## npx parcel build index.html
 - We will get error so we need to remove main: App.js from package.json
 
 - We can delete the dist folder from our projject and run the command npx parcel build index.html
