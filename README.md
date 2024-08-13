@@ -328,5 +328,22 @@ root.render(heading);
 const jsxHeading = <h1 id="heading">Namaste React 🚀</h1>;
 
 ```
-ep3
-29:20
+* Js Engine does not understand the jsx code, it only understand js code, js engine understand ECMAScript (ES6)
+- JSX (Transpiled before it reaches the JS) - Parcel - Babel (js compiler transpile jsx to react code).
+
+
+
+```
+// React.createElement => ReactElement-JS Object => HTMLElement(render)
+//  Using core react
+const heading = React.createElement("h1", {id:"heading"}, "Namaste react 🚀");
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);
+console.log(heading);
+
+// using jsx to create h1 tag
+// JSX => React.createElement => ReactElement-JS Object => HTMLElement(render)
+const jsxHeading = <h1 id="heading">Namaste React  using JSX🚀</h1>;
+console.log(jsxHeading);
+root.render(jsxHeading);
+```

@@ -81,7 +81,7 @@ import { jsx } from "react/jsx-runtime";
 
 
 
-// React .createElement => Object => HTMLElement(render)
+// React.createElement => ReactElement-JS Object => HTMLElement(render)
 //  Using core react
 const heading = React.createElement("h1", {id:"heading"}, "Namaste react 🚀");
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -89,5 +89,7 @@ root.render(heading);
 console.log(heading);
 
 // using jsx to create h1 tag
-const jsxHeading = <h1 id="heading">Namaste React 🚀</h1>;
-console.log(jsxHeading)
+// JSX => React.createElement => ReactElement-JS Object => HTMLElement(render)
+const jsxHeading = <h1 id="heading">Namaste React  using JSX🚀</h1>;
+console.log(jsxHeading);
+root.render(jsxHeading);
