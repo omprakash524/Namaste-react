@@ -237,3 +237,43 @@ Transitive dependencies
 Now we no longer need CDN we can remove react cdn link and reactDOM cdn link from index.html. Now if we start our app (npx parcel index.html) we can see our app running but we can see React is not defined because earlier we are getting React from the CDN but now we will get it from node_modules because we have installed react and reactDOM we just need to import React from node_modules.
 
 We will get the error Browser scripts cannot have imports or exports. because we are injecting  [<script src="./App.js"> </script>] so at the end it will think it is just a simple javascript but not react.
+
+
+
+
+# Parcel
+- Dev Build
+- Local Server
+- HMR = Hot Module Replacement
+- File Watching Algorithm - written in c++
+- Caching - Faster Builds
+- Image Optimization
+- Minification of file
+- Bundling
+- Compress
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling - Support older browser
+- Tree Shaking -  remove unused code
+- Diagnostic
+- Error Handling
+- HTTPs
+- Different dev and production bundles
+
+
+
+# ![alt text](image-4.png)
+
+
+# React uses a lot of other libraries lot of packages to make a production ready large application
+
+# npx parcel build index.html
+- We will get error so we need to remove main: App.js from package.json
+
+- We can delete the dist folder from our projject and run the command npx parcel build index.html
+- dist is basically to compress the large file into smaller in 3 files and make production ready app
+
+- If we delete .parcel-cache and dist these are temporary folder not a core code (node_modules also) we can use command npx parcel index.html to get again.
+
+- Any code that you automatically generatre do not put in github
+- We can put .parcel-cache and dist folder in .gitignore like we did for node_modules
