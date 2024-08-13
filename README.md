@@ -286,3 +286,47 @@ We will get the error Browser scripts cannot have imports or exports. because we
 
 - [parcel](https://parceljs.org/docs/)
 - [browserslist](https://browserslist.dev/)
+
+
+
+---
+# Episode 3 - Laying the foundation
+- Fundamental concepts of react which is required to build the application
+
+```
+"scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+```
+
+- If we are working on a new project and we dont know how to start a project then just go to package.json at scripts you will find.
+- To run - npm run start or npm start
+- To build - npm run build
+
+- JSX is javascript sentax which is easier to create react app it makes developers life easy
+- JSX is seperate react is seperate [jsx is not a part of react, we can even build application without using jsx as well]
+- Before these libraries and framework came we used to write the code in html css js seperate. we used to write markup in HTML and logics inside javascript. So this framework and libraries tries to merge this things up (html css js) so that we can do the same thing in one file. SO jsx is convention where we can merge html and js.
+
+- Using JSX to create h1 tag
+``` 
+const jsxHeading = <h1>Namaste React using JSX 🚀</h1>;
+```
+- 
+- JSX is not HTML in js
+- JSX is HTML like or XML like syntax
+- JSX is just a syntax not react element. React element is an object
+
+```
+// Using core React
+const heading = React.createElement("h1", {id:"heading"}, "Namaste react 🚀");
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(heading);
+
+// using jsx to create h1 tag
+const jsxHeading = <h1 id="heading">Namaste React 🚀</h1>;
+
+```
+ep3
+29:20

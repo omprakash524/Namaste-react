@@ -4,6 +4,8 @@
   "description": "This is Namaste React by Om Prakash igniting the app",
   
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
