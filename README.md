@@ -347,3 +347,88 @@ const jsxHeading = <h1 id="heading">Namaste React  using JSX🚀</h1>;
 console.log(jsxHeading);
 root.render(jsxHeading);
 ```
+
+- WHat ever we write jsx got converted into HTML after compilation. Inspect and see the elements
+- If we have to give attribute to jsx we have to use camelcase
+
+[Babel is a JavaScript compiler](https://babeljs.io/)
+
+- If we wish to write the multiple line then we have to use parenthesis () this is because babel need to understand from where jsx is starting
+
+
+## React Component 
+- Everything in react is component like button, card, header etc and there are two types of component in react
+- 1. Class Based Component - OLD
+- 2. Funuctional Component - NEW
+
+- A functional component is a normal javascript function which written some piece of jsx element.
+- A function which return jsx is functional component
+
+
+```
+
+// Using React with JSX
+//  React Functional Component
+const HeadingComponent = () =>{
+    return <h1 className="heading">Namaste react functional component</h1>
+}
+const HeadingComponent2 = () =>(
+           <h1 className="heading">Namaste react functional component</h1>
+);
+
+// Using React without JSX
+const HeadingComponent3 = () =>{
+    return React.createElement("h1",{className: "heading"}, "Namaste react functional component");
+}
+```
+
+
+## Component Composition 
+- A component inside the another component is called component composition
+```
+const HeadingComponent2 = () =>(
+    <div id="container">
+        <Title/>
+        <h1 className="heading">Namaste react functional component</h1>
+    </div>
+);
+root.render(<HeadingComponent2/>);
+
+```
+- This is called component composition
+
+```
+// React element
+const title = (
+    <h1 className="head">Namaste react using jsx 
+    </h1>
+);
+
+// React functional component
+const HeadingComponent = () =>{
+    return title;
+    }
+
+
+    // If we have any functional component lets say Title and we wish to use some where we can use in 3 ways
+    1. <Title/>
+    2. <Title></Title>
+    3. {Title()}
+    // React functional component is just a javascript function at the end of the day.
+
+```
+
+- We can write javascript in react using {} . JSX is so beautiful
+- and this jsx {} let's say it getting data from api and arrackers attack by [cross-site-scripting](https://www.cloudflare.com/learning/security/threats/cross-site-scripting/) it can sanitize the data first. so jsx is amazing.
+
+- If we have any functional component lets say Title and we wish to use some where we can use in 3 ways
+    1. <Title/>
+    2. <Title></Title>
+    3. {Title()}
+    - React functional component is just a javascript function at the end of the day.
+##    - If your foundation is strong you can build large scale application.
+
+
+
+
+# Episode 04 - Talk is cheap, show me the code!

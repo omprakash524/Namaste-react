@@ -5,6 +5,7 @@
   
   "scripts": {
     "start": "parcel index.html",
+    "om": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
   },

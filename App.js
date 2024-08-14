@@ -90,6 +90,50 @@ console.log(heading);
 
 // using jsx to create h1 tag
 // JSX => React.createElement => ReactElement-JS Object => HTMLElement(render)
-const jsxHeading = <h1 id="heading">Namaste React  using JSX🚀</h1>;
+const jsxHeading = (<h1 id="heading" className="heading">Namaste React  using JSX🚀</h1>);
 console.log(jsxHeading);
 root.render(jsxHeading);
+
+const jsxHeading1 = (
+    <h1 className="head">Namaste React </h1>
+);
+
+
+const Title = () =>(
+    <h1 className="head" tabIndex="5">
+        Namaste React using jsx
+    </h1>
+);
+const elem = <span>React element</span>
+
+const title1 = (
+    <h1 className="head" tabIndex="5">
+        {elem}
+        {Title()}
+        Namaste React using react element
+    </h1>
+);
+const number = 10000;
+// Using React with JSX
+//  React Functional Component
+const HeadingComponent = () =>{
+    return <h1 className="heading">Namaste react functional component</h1>
+}
+
+const HeadingComponent2 = () =>(
+    <div id="container">
+        <Title/>
+        {number}
+        <h2>{title1}</h2>
+        <h1>{89+645}</h1>
+        <h1 className="heading">Namaste react functional component</h1>
+    </div>
+);
+root.render(<HeadingComponent2/>);
+
+// Using React without JSX
+const HeadingComponent3 = () =>{
+    return React.createElement("h1",{className: "heading"}, "Namaste react functional component");
+}
+
+
