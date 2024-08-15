@@ -1,3 +1,8 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
 #heading{
     color: red;
     color: green;
@@ -22,4 +27,69 @@
 #childid2{
     background-color: greenyellow;
     font-family: Optimistic Text, -apple-system, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid green;
+}
+
+.logo{
+    width: 100px;
+}
+
+.nav-items{
+    font-size: 24px;
+    padding: 0px 80px;
+}
+
+.nav-items > ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li{
+    margin: 10px;
+    padding: 10px;
+}
+
+.res-card{
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(rgb(67, 190, 239), orange);
+    /* background-image: linear-gradient(greenyellow,orange); */
+    background: rgb(2,0,36);
+    border-radius: 8px;
+    
+}
+.res-card:hover{
+    border: 1px solid green;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgb(239, 157, 85) 0%, rgb(237, 237, 244) 35%, rgb(70, 205, 233) 100%);
+    
+}
+
+.search{
+    padding: 20px;
+}
+
+.res-logo{
+    width: 100%;
+    border-radius: 8px;
+}
+.res-logo:hover{
+    transform: scaleX(-1)
+
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
 }
