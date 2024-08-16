@@ -802,6 +802,47 @@ const Body = () =>{
 
 # Episode 04 - Talk is Cheap, show me the code
 
+
+```
+//  const styleCard = {
+//   backgroundColor: '#f0f0f0',
+// };
+
+// * Props :
+
+// * prop -> is Just a JS Object
+
+// * Note: When you have to dainamically pass in a data to a component, you pass in prop
+
+// const RestaurantCard = (props) => {
+// console.log(props);
+
+// * Note We can also destructure props on the fly by wrapping them in between {}, this is like...
+
+// * const { resName, cuisine } = props;
+
+// const RestaurantCard = ({ resName, cuisine }) => {
+//   console.log({ resName, cuisine });
+```
+
+-  not using `keys` (not acceptable) <<<< index as a key <<<<<<<<<< `unique id` (is the best  practice)
+-  We can also use index as the key to the JSX child elemnt - which is the 2nd parameter of the map() method, but is not a recommended practice -   [react official Docs declared this](https://legacy.reactjs.org/docs/lists-and-keys.html)
+        ```
+        {resList.map((restaurant, index) => (
+          <RestaurantCard key={index} resData={restaurant} />
+        ))}
+        ```
+
+- Why should we provide key property to the child elements - When creating a list in the UI from an array with JSX, you should add a key prop to each child and to any of its' children. React uses the key prop create a relationship between the component and the DOM element. The library uses this relationship to determine whether or not the component should be re-rendered.
+         
+
+- What is `Config-driven-UI` -> A "config-driven UI" is a user interface that is built and configured using a `declarative configuration` file or data structure, rather than being hardcoded.
+
+- Every company now-a-days follows these approach, because our Appications need to be Dynamic These Days
+
+## Note: A Good Senior Frontend engineer is - who is a good UI Layer Engineer and a good Data Layer Engineer
+
+
 ## Q: Is `JSX` mandatory for React?
 
 A: `JSX` is an Extension Syntax that allows writing HTML and Javascript together easily in React and is used to create React elements. These elements are then rendered to the React DOM. Each JSX element is just to make use of React easy and for calling React.createElement(component, props, …children) with less work. So, anything that is done with JSX can also be done with just plain JavaScript. So `JSX` is not mandatory but is used for writing better and clean code instead of writing code using `React.CreateElement`.
@@ -973,3 +1014,6 @@ A: DOM stands for `Document Object Model`, which represents your application UI 
 - [React Fiber Architecture](https://github.com/acdlite/react-fiber-architecture)
 - [React Without ES6](https://reactjs.org/docs/react-without-es6.html)
 - [Index Keys as Anti-Pattern](https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/)
+- [Optional Chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
+
