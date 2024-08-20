@@ -137,7 +137,9 @@ The `framework` provides the flow of a software application and tells the develo
 - https://www.youtube.com/watch?v=IrHmpdORLu8
 
 ---
- ======= Episode 2 - Igniting our App ==========
+## Namaste React 
+
+# _Episode 02 - Igniting Our App_
  
 - [Github](https://github.com/omprakash524/Namaste-react)
 
@@ -357,9 +359,7 @@ We will get the error Browser scripts cannot have imports or exports. because we
 - [browserslist](https://browserslist.dev/)
 
 
-## Namaste React 
 
-# _Episode 02 - Igniting Our App_
 
 ## Q: What is `npm`?
 
