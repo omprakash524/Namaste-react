@@ -145,6 +145,19 @@ The `framework` provides the flow of a software application and tells the develo
 
 - npm is package management it will manage all the package and sometimes we also called dependencies (but not node package manager)
 
+## Add node package manager to our project
+- npm init
+    - In our Project we will get package.json (configuration of project)
+    - When we creating a react app behind the scence webpack as a bundlers
+- npm install -D parcel
+- npm install (To recreate node_modules if it deleted)
+- npx parcel index.html (To run app)
+- npm install react (To install react in our project)
+- npm install react-dom (To install react-dom in our project)
+
+- If you delete dist folder you can recreate build
+- npx parcel build index.html
+
 ```git init```
 package.json is a crucial configuration file for npm
 
@@ -499,7 +512,11 @@ A: Browserslist defines and shares the list of target browsers between various f
 
 
 ---
-# Episode 3 - Laying the foundation
+
+## Namaste React 
+
+# Episode 03 - Laying the Foundation
+
 - Fundamental concepts of react which is required to build the application
 
 ```
@@ -639,9 +656,7 @@ const HeadingComponent = () =>{
 
 
 
-## Namaste React 
 
-# Episode 03 - Laying the Foundation
 
 ## Q: What is `JSX`?
 
