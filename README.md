@@ -1173,3 +1173,9 @@ const Example = (props) => {
     - import { Header as MyHeader } from "./components/Header"; // alias
     or
     - import Header from "./components/Header.js";
+
+
+
+#### - When ever a state variable updates react will rerender the component.
+
+[React fiber architecture](https://github.com/acdlite/react-fiber-architecture)
