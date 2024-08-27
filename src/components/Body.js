@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import resList from "../utils/mockData";
 
@@ -7,6 +7,24 @@ const Body = () => {
     // state variable - super powerful variable 
     const [listOfRestaurants, setlistOfRestaurants] = useState(resList);
    
+    useEffect(()=>{
+      fetchData();
+    }, []);
+
+    const fetchData = async () =>{
+      const data = await fetch(
+        "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9715987&lng=77.5945627&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      );
+
+      const json = await data.json();
+      console.log(json);
+      
+      setlistOfRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+    };
+
+
+
+
 
 
     // Normal javascript variable

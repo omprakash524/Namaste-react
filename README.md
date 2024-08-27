@@ -215,7 +215,7 @@ In Node.js and npm, there are several types of dependencies you can install, typ
 - These are not mandatory for your package to work, and you can specify fallback logic if they are not installed.
 
 ## Bundled Dependencies: 
-- Include dependencies within your package, ensuring that they are installed when your package is installed [1][3].
+- Include dependencies within your package, ensuring that they are installed when your package is installed.
 
 In summary, there are five main types of dependencies you can install in a Node.js project.
 
@@ -1323,3 +1323,12 @@ A: The `data` object, returned by the `await fetch()`, is a generic placeholder 
 so we can extract the `JSON object` from a `fetch` response by using `await data.json()`.
 `data.json()` is a method on the data object that lets you extract a `JSON object` from the data or response. The method returns a promise because we have used `await` keyword.
 so `data.json()` returns a promise resolved to a `JSON object`.
+
+
+
+## There are two ways to load the file
+
+![Two way to load the file](image-7.png)
+
+### - useEffect is just like a normal javascript function, there are two argument we pass. First argument is arrow function this arrow (()=>) function is callback function and second argument is dependency array.
+- when will this useEffect callback function is called is after the component render. This means it runs after React has updated the DOM with the latest changes.
