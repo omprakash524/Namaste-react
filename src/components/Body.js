@@ -7,6 +7,9 @@ const Body = () => {
   // State variable - super powerful variable 
   const [listOfRestaurants, setListOfRestaurants] = useState(resList);
 
+  const [searchText, setSearchText] = useState("");
+
+
   useEffect(() => {
     console.log("useEffect called om");
     fetchData();
@@ -30,12 +33,21 @@ const Body = () => {
   return (
     <div className="body">
       <div className="all-buttons">
-        <div className="search-container">
-          <input type="text" className="searchbtninput" placeholder="Search Food or Restaurant" />
-          <button className="searchbtn">Search</button>
-        </div>
+        
 
         <div className="filter">
+
+        <div className="search-container">
+          <input type="text" value={searchText} onChange={(event)=>{
+            setSearchText(event.target.value)
+          }} className="searchbtninput" placeholder="Search Food or Restaurant" />
+          <button className="searchbtn" onClick={()=>{
+            //  Filter the restaurant cards and update the UI
+            //  searchText
+            console.log("Search button clicked - "+searchText);
+          }}>Search</button>
+        </div>
+
           <button className="filter-btn" onClick={() => {
             // filter logic
             const filteredList = listOfRestaurants.filter(

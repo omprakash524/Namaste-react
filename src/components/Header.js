@@ -4,6 +4,7 @@ import { LOGO_URL } from "../utils/constant";
 const Header = () => {
   const [btnNameReact, setbtnNameReact] = useState("Login");
   const [Clickbtn, setclickBtn] = useState("Click");
+  const [btnName, setbtnName] = useState("ClickMe");
 
 
     return (
@@ -22,6 +23,10 @@ const Header = () => {
             <li>Contact Us</li>
             <li>Cart</li>
             <button className="login" onClick={()=>{
+              btnName==="ClickMe" ? setbtnName("❤️"): setbtnName("ClickMe");
+            }}>{btnName}</button>
+
+            <button className="login" onClick={()=>{
               btnNameReact==="Login" ? setbtnNameReact("Logout"): setbtnNameReact("Login");
             }}>{btnNameReact}</button>
 
@@ -33,5 +38,7 @@ const Header = () => {
       </div>
     );
   };
+
+// 1:32:00 min
 
   export default Header;

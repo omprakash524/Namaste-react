@@ -1332,3 +1332,7 @@ so `data.json()` returns a promise resolved to a `JSON object`.
 
 ### - useEffect is just like a normal javascript function, there are two argument we pass. First argument is arrow function this arrow (()=>) function is callback function and second argument is dependency array.
 - when will this useEffect callback function is called is after the component render. This means it runs after React has updated the DOM with the latest changes.
+
+- When ever you chage a local state variable react rerenders the component.
+- Whenever state variables update, reat triggers a reconcciliation cycle(re-renders the component);
+- Body component render each time when we refresh or type anything in search bar
